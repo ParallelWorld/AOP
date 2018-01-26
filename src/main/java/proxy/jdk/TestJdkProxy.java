@@ -3,9 +3,9 @@ package proxy.jdk;
 import proxy.CalculatorImpl;
 import proxy.ICalculator;
 
-public class TestProxy {
+public class TestJdkProxy {
     public static void main(String[] args) {
-        TestHandler proxy = new TestHandler();
+        JdkProxy proxy = new JdkProxy();
         ICalculator calculator = (ICalculator) proxy.bind(new CalculatorImpl());
 
         System.out.println(calculator.getClass());

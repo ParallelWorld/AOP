@@ -4,7 +4,7 @@ import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
-public class TestHandler implements InvocationHandler {
+public class JdkProxy implements InvocationHandler {
     private Object targetObject;
 
     public Object bind(Object targetObject) {
